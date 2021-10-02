@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.single-cocktail {
+  background-color: pink;
+  width: 100%;
+}
+.wrapper{
+  background-image: url("https://i.giphy.com/media/GnqtKr7hKpAOs/giphy.webp");
+ background-position: center;
+  background-size: cover;
+  /* background-repeat: repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  margin:  0;
+  padding:  20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+.cocktail-header{
+  margin: 40px 0;
+  /* border: 2px solid red; */
+  width: 100%;
+  text-align: center;
+}
+/* ------ Input Style---------- */
+.cocktail-search-name{
+    padding: 10px 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+/* ---------Button Style -------- */
+.search-button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+/* Div for cocktail  image and details */
+.cocktail-wrapper{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    /* column-gap: 20px; */
+    row-gap: 40px;
+    width: 75%;
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    justify-items: center;
+    background: rgba(77, 77, 77, 0.7)
+
+    
+}
+.cocktail{
+  position: relative;
+  /* border:2px solid yellow; */
+  place-self: center;
+  box-sizing: border-box;
+}
+.cocktail img{
+  width: 95%;
+  height: 260px;
+  object-fit: cover;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+.cocktail-name{
+  position: absolute;
+  z-index: 1;
+  bottom: -18%;
+  right: -10%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+}
