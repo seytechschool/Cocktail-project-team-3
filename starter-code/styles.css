@@ -2,7 +2,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .single-cocktail {
   background-color: pink;
   width: 100%;
@@ -55,12 +54,9 @@ h1{
     padding-bottom: 100px;
     justify-items: center;
     background: rgba(77, 77, 77, 0.7)
-
-    
 }
 .cocktail{
   position: relative;
-  /* border:2px solid yellow; */
   place-self: center;
   box-sizing: border-box;
 }
