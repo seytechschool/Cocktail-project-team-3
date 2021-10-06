@@ -8,12 +8,14 @@ body{
 }
 .wrapper{
   background-image: url("https://i.giphy.com/media/GnqtKr7hKpAOs/giphy.webp");
- background-position: center;
+  background-position: center;
   background-size: cover;
   /* background-repeat: repeat; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
 }
 h1{
   margin:  0;
@@ -43,23 +45,30 @@ h1{
 }
 /* Div for cocktail  image and details */
 .cocktail-wrapper{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto; 
-    /* column-gap: 20px; */
-    row-gap: 40px;
-    width: 75%;
-    margin-top: 50px;
-    padding-top: 35px;
-    padding-bottom: 100px;
-    justify-items: center;
-    background: rgba(77, 77, 77, 0.7)
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;  */
+  /* column-gap: 20px; */
+  /* row-gap: 40px; */
+  width: 75%;
+  margin-top: 50px;
+  padding-top: 35px;
+  padding-bottom: 100px;
+  justify-content:space-evenly;
+  align-items: baseline;
+  background: rgba(77, 77, 77, 0.7);
 }
 .cocktail{
   position: relative;
   place-self: center;
   box-sizing: border-box;
 }
+
+.cocktails-blocks {
+  margin: 0 0 20px 0;
+}
+
 .cocktail img{
   width: 95%;
   height: 260px;
@@ -81,3 +90,4 @@ h1{
   font-size: 34px;
   font-weight: 900;
 }
+

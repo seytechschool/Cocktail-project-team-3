@@ -33,11 +33,10 @@ function filterDrink() {
   div.forEach(subDiv => {
     if (!subDiv.innerText.includes(drink)) {
       subDiv.style.display = 'none';
-      subDiv.order = 0;
     } else {
       subDiv.style.display = 'block';
-      subDiv.order = 1;
     }
   });
 }
+
 
