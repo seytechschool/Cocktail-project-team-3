@@ -1,5 +1,5 @@
 import { cocktails } from "./data.js"; // this is your data
-
+// export { drink }
 
    // <p class="cocktail-instructions">${arr.strInstructions}</p>
 ///////////////////////////////////////////////////////////////
@@ -39,9 +39,19 @@ function searchStrDrink(){
       div[index].innerHTML = filteredCoctails
    })
 }
+////////////////////////////////////Link to New HTML /////////////////////////
 
-
-
-
-
-
+const block = document.querySelectorAll(".cocktail");
+block.forEach(el => {
+      el.addEventListener("click", function(){
+         location.href="drink.html";
+      })
+   })
+// cocktailWrapper.addEventListener("click", drink)
+// function drink(event) {
+//         console.log(event.srcElement.innerHTML)
+//    }
+cocktailWrapper.addEventListener("click", hello) 
+export function hello(){
+   console.log("HELLO")
+}
