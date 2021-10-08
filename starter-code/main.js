@@ -1,5 +1,5 @@
 import { cocktails } from "./data.js"; // this is your data
-// export { drink }
+
 
    // <p class="cocktail-instructions">${arr.strInstructions}</p>
 ///////////////////////////////////////////////////////////////
@@ -13,11 +13,12 @@ let searchInput = document.querySelector(".cocktail-search-name")
 cocktails.forEach(arr => {
 	let cocktail = `
         <div class="cocktail">
-        <img src="${arr.strDrinkThumb}" />
-        <p class="cocktail-name">${arr.strDrink}</p> 
+        <img src="${arr.strDrinkThumb}" id="${arr.idDrink}" />
+        <p class="cocktail-name" id="${arr.idDrink}">${arr.strDrink}</p> 
         </div>`;
         let div = document.createElement('div');
         div.setAttribute("class", "cocktails-blocks")
+        
         div.innerHTML = cocktail;
         cocktailWrapper.appendChild(div);
    });
@@ -47,11 +48,10 @@ block.forEach(el => {
          location.href="drink.html";
       })
    })
-// cocktailWrapper.addEventListener("click", drink)
-// function drink(event) {
-//         console.log(event.srcElement.innerHTML)
-//    }
-cocktailWrapper.addEventListener("click", hello) 
-export function hello(){
-   console.log("HELLO")
-}
+block.forEach(el => {
+   el.addEventListener("click", cocktailId) 
+   function cocktailId(event){
+      let id = event.target.id
+      localStorage.setItem("currentCoctailId", id)
+   }
+}) 
